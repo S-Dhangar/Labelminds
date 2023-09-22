@@ -40,13 +40,6 @@
     font-size: 15px;
    font-family:DM sans, sans-serif;
 }
-.logo-style{
-    font-size: 2rem;
-    color: white;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: row;
-}
 .headings:hover{
     translate: 10px 10px;
     cursor: pointer;

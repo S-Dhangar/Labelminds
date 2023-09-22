@@ -3,7 +3,7 @@ import React from 'react'
 const check = () => {
 
     const d=<div>5</div>;
-    console.log(d)
+    console.log(d);
   return (
     <div>check</div>
   )

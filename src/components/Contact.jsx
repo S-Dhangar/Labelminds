@@ -26,7 +26,7 @@ const Contact = () => {
 
     emailjs.sendForm('service_jijm2fu', 'template_1nlstbk', form.current, '4GhcRCe9tRjvV3n-3')
       .then((result) => {
-        console.log(result.text);
+        window.alert("Thanks: We will get back to you soon");
       }, (error) => {
         console.log(error.text);
       });

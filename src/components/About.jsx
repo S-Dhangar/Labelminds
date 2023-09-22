@@ -4,26 +4,6 @@ const About = () => {
 
 
 
-var countAnimation = (function () {
-  var options = {
-    useEasing : true, 
-    useGrouping : true, 
-    separator : ',', 
-    decimal : '.', 
-    prefix : '', 
-    suffix : '' 
-  };
-  
-  var startCount = function () {  
-  
-  };
-
-  return {
-    startCount: startCount
-  };
-
-})();
-
 
   return (
     <div id='about'>
@@ -66,15 +46,15 @@ var countAnimation = (function () {
     <div class="containers">
       <div class="rows" id="stats-row">
         <div class="">
-          <span class="stats-value" data-start="0" data-end="8">10</span>
+          <span class="stats-value" data-start="0" data-end="8">30</span>
           <span class="stats-label">Days</span>
         </div>
         <div class="">
-          <span class="stats-value" data-start="0" data-end="14463">150+</span>
+          <span class="stats-value" data-start="0" data-end="14463">80+</span>
           <span class="stats-label">Clients</span>
         </div>
         <div class="">
-          <span class="stats-value" data-start="0" data-end="24209">24209</span>
+          <span class="stats-value" data-start="0" data-end="24209">2409</span>
           <span class="stats-label">Searches</span>
         </div>
       </div>

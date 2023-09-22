@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './components/Navbar.css'
 import { Link } from 'react-router-dom';
-import logo from './images/labelminds.jpg'
 const Navbar = () => {
 
   const [current, setCurrent] = useState("");
@@ -30,7 +29,16 @@ const Navbar = () => {
   return (
 
       <nav id='navbar' className="navbar navbar-expand-lg navbar navbar-dark">
-        <img src={logo} alt="" height="30px" width="110px" style={{marginLeft:"9%"}} />
+        
+
+  <span class="logo_body">
+    <div class="label">LABEL</div>
+    <div class="M">M</div>
+    <div class="I">
+      <div class="dot"></div>
+    </div>
+    <div class="sec">NDS</div>
+  </span>
         {/* <h1 className='ml-4 text-light' alt="">LABELMINDS</h1> */}
         <button onClick={() => { if (toggle === false) { document.getElementById("navbar").style.background = "#081b29"; setToggle(true); } else { setToggle(false) } }} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded='false' aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

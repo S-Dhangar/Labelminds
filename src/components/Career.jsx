@@ -2,8 +2,7 @@ import React, {  useEffect, useState } from 'react'
 import './Career.css'
 import { Link } from 'react-scroll'
 import Loader from '../Loader'
-import { useContext } from 'react'
-import { AuthContext } from '../Context'
+
 
 
 const Career = () => {
@@ -18,7 +17,10 @@ const Career = () => {
       behavior: 'smooth', // Add smooth scrolling behavior
     });
     },[]);
-  
+  const submitData=(e)=>{
+    e.preventDefault();
+    window.alert("Thanks: We will get back to you soon");
+  }
   return (
     <>
     {
@@ -34,7 +36,7 @@ const Career = () => {
         </div>
       </div>
       <div className="benefitscontainer">
-        <h2>benefits of being labelminds</h2>
+        <h2>benefits of being Labelminds</h2>
         <ul>
           <li>
             <img src="//s3-us-west-2.amazonaws.com/ec-cdn-content/ec-image-resources/501213759_insurance.jpg" alt="competitive insurance"/>
@@ -75,8 +77,8 @@ const Career = () => {
           </li>
           <li>
             <img src="//s3-us-west-2.amazonaws.com/ec-cdn-content/ec-image-resources/231731189_texas.jpg" alt="texas location"/>
-            <h3 id="location"><span>Indore location:</span><br />East MP</h3>
-            <p>Our large Indore location has plenty of free parking away from the crowds. There’s a killer Donut shop down the road too.</p>
+            <h3 id="location"><span>Bhopal location:</span><br />East Bhopal</h3>
+            <p>Our Bhopal location has plenty of free parking away from the crowds. There’s a killer Donut shop down the road too.</p>
           </li>
         </ul>
       </div>
@@ -87,21 +89,23 @@ const Career = () => {
       <div className="cards">
     <div className="card">
      
-      <h2 className="card__title">Excel Expert</h2>
-      <p className="card__paragraph">We are hiring a 5 year experienced excel expert.
-      <p>Location : Ahemdabad</p>
+      <h6 className="card__title">Sr. Software Eng.</h6>
+      <p className="card__paragraph">We are hiring a 5 year experienced React developer.
+      <p>Location : Bhopal</p>
+      
 
       
   <br />
   <input style={{marginTop:"20px",width:"100%"}} type="file" />  </p>
       
-      
+  <button className='btn btn-primary' onClick={submitData}>Submit</button>
+
       
     </div>
     <div className="card">
        
-        <h2 className="card__title">HR</h2>
-        <p className="card__paragraph">We are hiring an experienced person for dealing with the clients.
+        <h6 className="card__title">Power BI developer</h6>
+        <p className="card__paragraph">We are hiring an experienced person in Power BI.
         <p>Location : Bhopal</p>
   <br />
 
@@ -109,22 +113,22 @@ const Career = () => {
 
   <input style={{marginTop:"20px",width:"100%"}} type="file" />        
         </p>
-        
+        <button className='btn btn-primary' onClick={submitData}>Submit</button>
+
       </div>
       <div className="card">
          
-          <h2 className="card__title">CVAT</h2>
-          <p className="card__paragraph">We are hiring an experienced person in image annotation tools like cvat.
-          <p>Location : indore</p>
-
+          <h6 className="card__title">DB Administrator</h6>
+          <p className="card__paragraph">We are hiring an experienced person in database administration.
+          <p>Location : Bhopal</p>
   <br />
   <input style={{marginTop:"20px",width:"100%"}} type="file" /></p>
+  <button className='btn btn-primary' onClick={submitData}>Submit</button>
+
         </div>
   </div>
     </div>
-     
-       
-  
+    
   
      
     }

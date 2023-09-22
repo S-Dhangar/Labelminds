@@ -1,0 +1,74 @@
+.logo_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.I{
+  font-size: 48px;
+  font-weight: bolder;
+  color: #ffffff;
+  position: relative;
+  height: 32px;
+  width: 10px;
+  /* border: 1px solid red; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  animation: moveI 1.5s linear infinite alternate;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(155, 82, 82);;
+  position: absolute;
+  top: -10px; /* Initial position above the 'i' */
+  border-radius: 100%;
+  animation: moveDot 1.5s linear infinite alternate; /* Animation */
+
+}
+
+.label {
+  font-size: 48px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: cursive; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.M {
+  font-size: 48px;
+  font-weight: bolder;
+  color: rgb(155, 82, 82);;
+  position: relative;
+}
+.sec {
+  font-size: 48px;
+  font-weight: bolder;
+  color: rgb(155, 82, 82);;
+  position: relative;
+}
+@keyframes moveDot {
+  0% {
+      top: -15px; /* Start position */
+      /* background-color: rgb(155, 82, 82); */
+  }
+  100% {
+      top: -3px; /* End position */
+  }
+}
+
+@keyframes moveI {
+  0% {
+      /* height: 10px; */
+      top: 1px;
+  }
+  100% {
+      top: 18px;
+      height: 0px;
+  }
+}

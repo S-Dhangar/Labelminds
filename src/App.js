@@ -1,14 +1,13 @@
 import './App.css';
 import About from './components/About';
 // import Task from './components/task';
-import { useContext, useState} from 'react';
+import { useState} from 'react';
 import Navbar from './Navbar';
 import Home from './components/Home';
 import Career from './components/Career';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import { AuthContext } from './Context';
 import Loader from './Loader';
 import Services from './components/Services';
 import DataAnnotation from './components/DataAnnotation';

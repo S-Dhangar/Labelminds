@@ -23,29 +23,9 @@ const Home = () => {
       });
 
       
-    const swiftUpElements = document.querySelectorAll('.swift-up-text');
-
-    swiftUpElements.forEach(elem => {
-
-        const words = elem.textContent.split(' ');
-        elem.innerHTML = '';
-
-        words.forEach((el, index) => {
-            words[index] = `<span><i>${words[index]}</i></span>`;
-        });
-
-        elem.innerHTML = words.join(' ');
-
-        const children = document.querySelectorAll('span > i');
-        children.forEach((node, index) => {
-            node.style.animationDelay = `${index * .2}s`;
-        });
-
-    });
-
         
     
-    }, [Link])
+    }, [])
 
 
 
@@ -74,10 +54,6 @@ const Home = () => {
     <div class="word1">Data Annotation</div>
     <div class="word3">Web Scrapping</div>
     <div class="word2">Data Extraction</div>
-
-
-
-
   </div>
 </h1>
                     <p className="swift-up-text">
@@ -97,7 +73,6 @@ const Home = () => {
 
                     {/* <span className="animate"></span> */}
                 </div>
-
 
 
             </div>

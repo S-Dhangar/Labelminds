@@ -72,7 +72,7 @@ const Services = () => {
 
                 Data Annotation
                 <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $0.005 Per Image</p>
-                <button onClick={navigator} name='dataannotation' className="button1 bouncy" style={{ animationDelay: "0.07s" }}>Read me</button>
+                <button onClick={navigator} name='dataannotation' className="btn btn-primary bouncy" style={{ animationDelay: "0.07s" }}>Read me</button>
 
               </div>
             </div>
@@ -84,7 +84,7 @@ const Services = () => {
                 Web Scrapping
 
                 <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $5 </p>
-                <button onClick={navigator} name='webscrapping' className="button1 bouncy" style={{ animationDelay: "0.34s" }}>Read me</button>
+                <button onClick={navigator} name='webscrapping' className="btn btn-primary bouncy" style={{ animationDelay: "0.34s" }}>Read me</button>
 
               </div>
             </div>
@@ -94,7 +94,7 @@ const Services = () => {
               <div className='service-box-two'>
                 Data Entry
                 <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $2 Per Document</p>
-                <button onClick={navigator} name='dataentry' className="button1 bouncy" style={{ animationDelay: "0.60s" }}>Read me</button>
+                <button onClick={navigator} name='dataentry' className="btn btn-primary bouncy" style={{ animationDelay: "0.60s" }}>Read me</button>
 
               </div>
             </div>

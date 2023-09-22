@@ -33,14 +33,16 @@
     flex-direction: column;
     justify-content: flex-start;
     color: white;
-   
+  }
 
 
-
-
-
+@media(max-width:800px){
+  .content{
+    width: 100%;
 
   }
+}
+
   
   .overlay {
     position: absolute;
@@ -233,10 +235,7 @@
       font-weight: 700;
       width: auto;
     }
-    .animation_container{
-      width: 100%;        
-      
-    }
+   
 
   }
   .animation_container{

@@ -19,7 +19,7 @@ const DataEntry = () => {
         const changeColor = (e)=>{
           var labels = document.getElementsByTagName("label");
           for(let i=0;i<labels.length;i++){
-            if(e.target.id==labels[i].id)
+            if(e.target.id===labels[i].id)
            {
             document.getElementById(labels[i].id).style.backgroundColor="black";
             document.getElementById(labels[i].id).style.color="white";
