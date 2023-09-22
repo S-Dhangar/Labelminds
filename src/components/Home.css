@@ -286,7 +286,6 @@ i{
 
 
 
-
 .animation-class {
   color: #333;
   font-family: tahoma;
@@ -329,6 +328,7 @@ i{
 
 .word1, .word2, .word3 {
   font-family: tahoma;
+  margin-top: 7px;
 }
 
 @keyframes openclose {
