@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [loader, setIsLoading] = useState(false);
+  const [lloader, setIsLoading] = useState(false);
 
   const startLoading = () => {
     setIsLoading(true);
@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
     setIsLoading(false);
   };
   return (
-    <AuthContext.Provider value={{loader,startLoading,stopLoading}}>
+    <AuthContext.Provider value={{lloader,startLoading,stopLoading}}>
       {children}
     </AuthContext.Provider>
   );

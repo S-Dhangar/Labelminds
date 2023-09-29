@@ -1,18 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './DataAnnotation.css'
 import Loader from '../Loader';
+import { AuthContext } from '../Context';
 const WebScrapping = () => {
   const [loader,setLoader]=useState(true);
-  useEffect(()=>{
-      setTimeout(()=>{
-          setLoader(false);
-      },1000);
-    
+  const {lloader,startLoading,stopLoading} = useContext(AuthContext);
+
+ startLoading();
+    console.log(lloader);
+
+  useEffect(() => {
+    // This may log true if the state update has happened
+    // This will log false because stopLoading() sets it to false
+    setTimeout(() => {
+      setLoader(false);
+      stopLoading();
+      console.log(lloader);
+
+    }, 1000);
+  
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Add smooth scrolling behavior
+      behavior: 'smooth',
     });
-    },[]);
+  }, []);
+  
     const changeColor = (e)=>{
       var labels = document.getElementsByTagName("label");
       for(let i=0;i<labels.length;i++){

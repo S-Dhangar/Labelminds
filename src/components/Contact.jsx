@@ -55,7 +55,7 @@ const Contact = () => {
             <input style={{ color: "gray", fontSize: "13px" }} type="text" placeholder='xyz@mail.com :- Your Query' name="message" required="" />
             <label>Tell here how can we help you.</label>
           </div>
-          <a href='#' onClick={sendEmail}>
+          <a href='https://labelminds.vercel.app/' onClick={sendEmail}>
             <span></span>
             <span></span>
             <span></span>

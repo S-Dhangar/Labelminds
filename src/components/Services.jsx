@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Services.css'
 import video from '../images/bg_video_services.mp4'
 import Loader from '../Loader'
-import { useContext } from 'react'
-import { AuthContext } from '../Context'
 import { useNavigate } from 'react-router-dom'
 const Services = () => {
-  const {stopLoading} = useContext(AuthContext)
   const navigate = useNavigate();
   
   const [loader,setLoader]=useState(true);

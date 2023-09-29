@@ -17,10 +17,17 @@ import { useEffect } from 'react';
 import Privacy from './components/Privacy';
 import PNF from './PNF';
 function App() {
-const [loader,setLoader]=useState(false);
+
+const [loader,setLoader]=useState(true);
+localStorage.setItem('loader',true);
+
+
   useEffect(()=>{
       setTimeout(()=>{
           setLoader(false);
+          localStorage.setItem('loader',false);
+
+
       },3000);
   },[])
 
