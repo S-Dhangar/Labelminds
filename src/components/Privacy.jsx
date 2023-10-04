@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { AuthContext } from '../Context';
 
 const Privacy = () => {
+  const {setCurrent} = useContext(AuthContext);
+  useEffect(() => {
+    setCurrent("");
+    
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Add smooth scrolling behavior
+    });
+  }, []);
   return (
     <div style={{backgroundColor:"#b3b3b3",padding:"50px"}}>
 

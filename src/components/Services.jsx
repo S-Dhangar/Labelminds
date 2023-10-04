@@ -3,11 +3,14 @@ import './Services.css'
 import video from '../images/bg_video_services.mp4'
 import Loader from '../Loader'
 import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react'
+import { AuthContext } from '../Context'
 const Services = () => {
   const navigate = useNavigate();
-  
+  const {setCurrent} = useContext(AuthContext);
   const [loader,setLoader]=useState(true);
   useEffect(()=>{
+    setCurrent("services")
       setTimeout(()=>{
           setLoader(false);
       },1000);

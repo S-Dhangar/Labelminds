@@ -4,7 +4,7 @@ import Loader from '../Loader';
 import { AuthContext } from '../Context';
 const WebScrapping = () => {
   const [loader,setLoader]=useState(true);
-  const {lloader,startLoading,stopLoading} = useContext(AuthContext);
+  const {lloader,startLoading,stopLoading,setCurrent} = useContext(AuthContext);
 
  startLoading();
     console.log(lloader);
@@ -12,6 +12,7 @@ const WebScrapping = () => {
   useEffect(() => {
     // This may log true if the state update has happened
     // This will log false because stopLoading() sets it to false
+    setCurrent('services');
     setTimeout(() => {
       setLoader(false);
       stopLoading();

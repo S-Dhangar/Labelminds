@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './components/Navbar.css'
+import { useContext } from 'react';
+import { AuthContext } from './Context';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
 
-  const [current, setCurrent] = useState("");
+  const {current, setCurrent} = useContext(AuthContext);
   const [toggle, setToggle] = useState(false);
   const changeNavbarColor = () => {
     if (toggle === true) {

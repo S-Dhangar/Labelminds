@@ -4,14 +4,15 @@ import React, { useEffect, useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import video from '../images/bg_video2.mp4'
-// import { useContext } from 'react'
-// import { AuthContext } from '../Context'
+import { useContext } from 'react'
+import { AuthContext } from '../Context'
 import Loader from '../Loader'
 const Home = () => {
     const [loader,setLoader]=useState(true);
-    
+    const {setCurrent} = useContext(AuthContext);
     
     useEffect(()=>{
+        setCurrent("home");
 
         setTimeout(()=>{
             setLoader(false);

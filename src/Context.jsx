@@ -3,7 +3,7 @@ const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [lloader, setIsLoading] = useState(false);
-
+  const [current,setCurrent] = useState('');
   const startLoading = () => {
     setIsLoading(true);
   };
@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
     setIsLoading(false);
   };
   return (
-    <AuthContext.Provider value={{lloader,startLoading,stopLoading}}>
+    <AuthContext.Provider value={{lloader,startLoading,stopLoading,current,setCurrent}}>
       {children}
     </AuthContext.Provider>
   );

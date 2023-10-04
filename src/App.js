@@ -1,7 +1,7 @@
 import './App.css';
 import About from './components/About';
 // import Task from './components/task';
-import { useState} from 'react';
+import { useContext, useState} from 'react';
 import Navbar from './Navbar';
 import Home from './components/Home';
 import Career from './components/Career';
@@ -16,8 +16,8 @@ import WebScrapping from './components/WebScrapping';
 import { useEffect } from 'react';
 import Privacy from './components/Privacy';
 import PNF from './PNF';
+import { AuthContext } from './Context';
 function App() {
-
 const [loader,setLoader]=useState(true);
 localStorage.setItem('loader',true);
 

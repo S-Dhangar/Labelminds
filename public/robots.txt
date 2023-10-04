@@ -1,3 +1,6 @@
+
+Sitemap: https://www.labelminds.com/sitemap.xml
+
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:

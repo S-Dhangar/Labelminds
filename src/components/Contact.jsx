@@ -1,26 +1,27 @@
 import './Contact.css'
-import React, { useRef, useState,useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Loader from '../Loader';
-const Contact = () => {
+import { AuthContext } from '../Context'
+import { useContext } from 'react'
 
-  const [loader,setLoader]=useState(true);
-  useEffect(()=>{
-      setTimeout(()=>{
-          setLoader(false);
-      },1000);
-    
+const Contact = () => {
+  const { setCurrent } = useContext(AuthContext);
+  const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    setCurrent("contact");
+    setTimeout(() => {
+      setLoader(false);
+    }, 1000);
+
     window.scrollTo({
       top: 0,
       behavior: 'smooth', // Add smooth scrolling behavior
     });
-    },[]);
-
-
+  }, []);
 
 
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -36,38 +37,38 @@ const Contact = () => {
 
 
   return (
-  <>
-  {
-      loader ? <Loader/>  :
-      <div className='contact' id='contact'>
-      <div className="login-box">
-        <h2>Get in Touch</h2>
-        <form ref={form}>
-          <div className="user-box">
-            <input type="text" name="user_name" required="" />
-            <label>Subject</label>
+    <>
+      {
+        loader ? <Loader /> :
+          <div className='contact' id='contact'>
+            <div className="login-box">
+              <h2>Get in Touch</h2>
+              <form ref={form}>
+                <div className="user-box">
+                  <input type="text" name="user_name" required="" />
+                  <label>Subject</label>
+                </div>
+                <div className="user-box">
+                  <input type="email" name="user_email" required="" />
+                  <label>Email</label>
+                </div>
+                <div className="user-box">
+                  <input style={{ color: "gray", fontSize: "13px" }} type="text" placeholder='xyz@mail.com :- Your Query' name="message" required="" />
+                  <label>Tell here how can we help you.</label>
+                </div>
+                <a href='https://labelminds.vercel.app/' onClick={sendEmail}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Submit
+                </a>
+              </form>
+            </div>
           </div>
-          <div className="user-box">
-            <input type="email" name="user_email" required="" />
-            <label>Email</label>
-          </div>
-          <div className="user-box">
-            <input style={{ color: "gray", fontSize: "13px" }} type="text" placeholder='xyz@mail.com :- Your Query' name="message" required="" />
-            <label>Tell here how can we help you.</label>
-          </div>
-          <a href='https://labelminds.vercel.app/' onClick={sendEmail}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Submit
-          </a>
-        </form>
-      </div>
-    </div>
-  }
-  </>
-    
+      }
+    </>
+
   )
 }
 
