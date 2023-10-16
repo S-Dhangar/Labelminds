@@ -14,7 +14,6 @@ const Services = () => {
       setTimeout(()=>{
           setLoader(false);
       },1000);
-    
     window.scrollTo({
       top: 0,
       behavior: 'smooth', // Add smooth scrolling behavior
