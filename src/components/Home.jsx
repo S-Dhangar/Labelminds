@@ -58,8 +58,8 @@ const Home = () => {
   </div>
 </h1>
                     <p className="swift-up-text">
-                        Impressive group of young machine learning engineers and data scientists,
-                        pioneering the development of an AI website with versatile capabilities.
+                    Partner with LabelMinds for unparalleled data annotation services that drive AI innovation. 
+                    Let us be your trusted ally in the journey towards groundbreaking artificial intelligence solutions.
 
                     </p>
 
