@@ -8,86 +8,68 @@ import { useContext } from 'react'
 import { AuthContext } from '../Context'
 import Loader from '../Loader'
 const Home = () => {
-    const [loader,setLoader]=useState(true);
-    const {setCurrent} = useContext(AuthContext);
-    
-    useEffect(()=>{
+
+    const [loader, setLoader] = useState(true);
+    const { setCurrent } = useContext(AuthContext);
+
+    useEffect(() => {
         setCurrent("home");
 
-        setTimeout(()=>{
+        setTimeout(() => {
             setLoader(false);
-        },1000);
-      
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth', // Add smooth scrolling behavior
-      });
+        }, 1000);
 
-      
-        
-    
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Add smooth scrolling behavior
+        });
     }, [])
-
-
-
-
-
-    
-
-
 
     return (
         <>
-        {
-            loader ? <Loader/> :
+            {
+                loader ? <Loader /> :
 
-            <div>
-        <div className='home'>
-            <video src={video} autoPlay loop muted />
-            <div className="overlay"></div>
-            <div className="content">
-                <h1 className='animation-header'>Where Data Meets Intelligence</h1>
+                    <div>
+                        <div className='home'>
+                            <video src={video} autoPlay loop muted />
+                            <div className="overlay"></div>
+                            <div className="content">
+                                <h1 className='animation-header'>Where Data Meets Intelligence</h1>
 
-                <div className="animation_container">
-                <h1 class="animation-class">
-  <span className="animation-span" style={{color:"white"}}>Driving</span>
-  <div class="message">
-    <div class="word1">Data Annotation</div>
-    <div class="word3">Web Scrapping</div>
-    <div class="word2">Data Extraction</div>
-  </div>
-</h1>
-                    <p className="swift-up-text">
-                    Partner with LabelMinds for unparalleled data annotation services that drive AI innovation. 
-                    Let us be your trusted ally in the journey towards groundbreaking artificial intelligence solutions.
+                                <div className="animation_container">
+                                    <h1 class="animation-class">
+                                        <span className="animation-span" style={{ color: "white" }}>Driving</span>
+                                        <div class="message">
+                                            <div class="word1">Data Annotation</div>
+                                            <div class="word3">Web Scrapping</div>
+                                            <div class="word2">Data Extraction</div>
+                                        </div>
+                                    </h1>
+                                    <p className="swift-up-text">
+                                        Partner with LabelMinds for unparalleled data annotation services that drive AI innovation.
+                                        Let us be your trusted ally in the journey towards groundbreaking artificial intelligence solutions.
 
-                    </p>
+                                    </p>
 
-                </div>
-
-
-                <div className="btn-box">
-                    <Link
-                         to='/contact' 
-                        className="btn emailButton"
-                    >Let's Talk</Link>
-
-                    {/* <span className="animate"></span> */}
-                </div>
+                                </div>
 
 
-            </div>
-            </div>
-            <About/>
+                                <div className="btn-box">
+                                    <Link
+                                        to='/contact'
+                                        className="btn emailButton"
+                                    >Let's Talk</Link>
 
+                                    {/* <span className="animate"></span> */}
+                                </div>
+                            </div>
+                        </div>
+                        <About />
+                    </div>
+            }
+        </>
 
-        </div>
-
-
-        }
-                    </>
-
-        
     )
 }
 

@@ -52,10 +52,10 @@ const Navbar = () => {
               <Link className="nav-link" name='home' style={{ color: current === 'home' ? "#00abf0" : "white" }} onClick={(e) => { setCurrent(e.target.name) }} to="/">HOME</Link>
             </li>
             <li className="nav-item  pr-4">
-              <Link className="nav-link" name='career' style={{ color: current === 'career' ? "#00abf0" : "white" }} onClick={ (e)=>  setCurrent(e.target.name)} to="/career">CAREER</Link>
+              <Link className="nav-link" name='services' style={{ color: current === 'services' ? "#00abf0" : "white" }} onClick={(e) => { setCurrent(e.target.name) }} to="/services">SERVICES</Link>
             </li>
             <li className="nav-item  pr-4">
-              <Link className="nav-link" name='services' style={{ color: current === 'services' ? "#00abf0" : "white" }} onClick={(e) => { setCurrent(e.target.name) }} to="/services">SERVICES</Link>
+              <Link className="nav-link" name='career' style={{ color: current === 'career' ? "#00abf0" : "white" }} onClick={ (e)=>  setCurrent(e.target.name)} to="/career">CAREER</Link>
             </li>
             <li className="nav-item  pr-4">
               <Link className="nav-link" name='contact' style={{ color: current === 'contact' ? "#00abf0" : "white" }} onClick={(e) => { setCurrent(e.target.name) }} to="/contact">CONTACT</Link>

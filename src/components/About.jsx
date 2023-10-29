@@ -5,65 +5,81 @@ const About = () => {
 
   return (
     <div id='about'>
-        
+      <section className="contents-page">
+        <div className="container-fluids">
+          <section className="hero">
+            <div className="containers">
+              <div className="rows">
+                <h1 className="text-uppercase">Hello, there!!</h1>
+                <span className="texts" style={{color:'#081b29'}}>
+                  <p>At our cutting-edge data annotation company, we specialize in providing top-notch data annotation services tailored for AI companies, operating exclusively on a B2B model. With meticulous precision and advanced techniques, we transform raw data into refined, accurate, and highly usable formats, optimizing it for seamless integration into artificial intelligence systems.
+                  </p>
+                </span>
+              </div>
+            </div>
+          </section>
+          <section className="mission">
+            <div className="containers">
+              <div className="rows">
+                <h2 className="text-uppercase" style={{color:'#143e5b'}}>Our Mission</h2>
+                <span className="texts">
+                  <p style={{color:'#081b29'}}>Our dedicated team excels in comprehensive data preprocessing, ensuring that the data we annotate is primed and ready for AI applications. Through meticulous preprocessing techniques, we enhance the quality of your data, enabling AI algorithms to operate at peak performance and deliver exceptional results.</p>
+                  <p style={{color:'#081b29'}}>What sets us apart is our commitment to delivering unparalleled accuracy and relevance. We meticulously annotate data, providing AI companies with a reliable foundation for their machine learning models and algorithms. Our annotations are designed to enhance the learning capabilities of AI systems, ensuring they grasp intricate patterns and nuances within the data.</p>
+                  <p>
+                    <h2 className="text-uppercase" style={{color:'#143e5b'}}>Why Choose Us?</h2>
+                    <div>
+                      <p style={{color:'#081b29'}}>
+                        <b style={{color:'#143e5b'}}>Expert Annotation</b>
+                        <br />
+                         Our team comprises skilled professionals well-versed in various domains, guaranteeing expert annotation for diverse datasets.
+                      </p>
+                      <p style={{color:'#081b29'}}>
+                        <b style={{color:'#143e5b'}}>Customized Solutions</b><br />
+                         We tailor our services to meet the unique needs of your AI projects, ensuring that the annotated data aligns perfectly with your specific requirements.
+                      </p>
+                      <p style={{color:'#081b29'}}>
+                        <b style={{color:'#143e5b'}}>Data Preprocessing Excellence</b> <br /> We meticulously preprocess data, optimizing it for AI applications by cleaning, structuring, and enriching it for superior machine learning outcomes.
+                      </p>
+                      <p style={{color:'#081b29'}}>
+                        <b style={{color:'#143e5b'}}>Quality Assurance</b><br />  Rigorous quality checks and validation processes are implemented to maintain the highest standards of accuracy and reliability.
+                      </p>
+                      <p style={{color:'#081b29'}}>
+                        <b style={{color:'#143e5b'}}>Timely Delivery</b><br />  We understand the importance of deadlines in the AI industry. Our efficient workflow ensures timely delivery without compromising on quality.
+                      </p>
+                      <p style={{color:'#081b29'}}>
+                        <b style={{color:'#143e5b'}}>Confidentiality and Security</b><br />  Your data's confidentiality and security are paramount to us. We employ robust measures to safeguard your information throughout the annotation process.
+                      </p>
+                    </div>
+                  </p>
+                </span>
+              </div>
+            </div>
+          </section>
 
-        <section class="contents-page">
-  <div class="container-fluids">
-    
-  <section class="hero">
-    <div class="containers">
-      <div class="rows">
-        <h1 class="text-uppercase">Hello, there!!</h1>
-        <span class="texts">
-          <p>We were born out of a painful experience of processing a large set of data. So we created a kick-ass product to help data scientists and such people to annotate a large amount of data at one go, and by using advanced data science to help intelligently select the best deal.
-          </p>
-          <p>
-            We hope your experience is better than ours was.
-          </p>
-        </span>
-      </div>
-    </div>
-  </section>
-  
-  <section class="mission">
-    <div class="containers">
-      <div class="rows">
-        <h2 class="text-uppercase">Our Mission</h2>
-        <span class="texts">
-          <p>4 out of eight people still preparing data for their models offline and waste a lost of their time. We want to bring you online to help you spend less time, get more, and feel more confident doing so. We&rsquo;re on your team. We&rsquo;ve hand selected vendors with stellar reputations and services to search with a click.</p>
-          <p>It&rsquo;s personal. Our recently engaged founder struggled with the same issues you&rsquo;re having today - spending a lot of money on something he knew little about on sites he&rsquo;d never heard of.</p>
-          <p>We&rsquo;re also using data science and machine learning with IBM Watson to help you make the smartest decision. This <a href="http://blog.rarecarat.com/post/watson-score-how-we-re-using-data-science-and-machine-learning" target="_blank">blog post</a> explains more.</p>
-          <p>In research and development, we&rsquo;re testing artificial intelligence bots that ask questions in English, instead of &ldquo;doing&rdquo; to help guide beginners in finding the right way.</p>
-          <p>If you have suggestions for features to process data better, we&rsquo;re all ears.</p>
-        </span>
-      </div>
-    </div>
-  </section>
-    
-  <section class="stats">
-    <div class="containers">
-      <div class="rows" id="stats-row">
-        <div class="">
-          <span class="stats-value" data-start="0" data-end="8">30</span>
-          <span class="stats-label">Days</span>
+          <section className="stats">
+            <div className="containers">
+              <div className="rows" id="stats-row">
+                <div className="">
+                  <span className="stats-value" data-start="0" data-end="8">30</span>
+                  <span className="stats-label">Days</span>
+                </div>
+                <div className="">
+                  <span className="stats-value" data-start="0" data-end="14463">80+</span>
+                  <span className="stats-label">Clients</span>
+                </div>
+                <div className="">
+                  <span className="stats-value" data-start="0" data-end="24209">2409</span>
+                  <span className="stats-label">Searches</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </div>
-        <div class="">
-          <span class="stats-value" data-start="0" data-end="14463">80+</span>
-          <span class="stats-label">Clients</span>
-        </div>
-        <div class="">
-          <span class="stats-value" data-start="0" data-end="24209">2409</span>
-          <span class="stats-label">Searches</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-</div>
-</section>
+      </section>
 
 
-<br></br>
+      <br></br>
 
 
 

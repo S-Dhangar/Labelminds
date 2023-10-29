@@ -33,8 +33,8 @@ const Career = () => {
               <div className="headercontent">
                 <h1>do what you <img src="//s3-us-west-2.amazonaws.com/ec-cdn-content/ec-image-resources/1345984533_love_360.png" alt="Love" className="img-responsive" /> everyday</h1>
                 <p>Want to join the Labelminds team? If you have a passion for planning & want to work for a rapidly growing entrepreneurial company, check out the listings below or send your resume to <span>careers@labelminds.com</span></p>
-                <a href="#"> <Link to="joblistings" smooth={true} duration={1000} >view job openings</Link>
-                </a>
+                <Link to="joblistings" smooth={true} duration={1000} ><span className='span' style={{color:'white'}}>view job openings</span></Link>
+               
               </div>
             </div>
             <div className="benefitscontainer">

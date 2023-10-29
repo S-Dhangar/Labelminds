@@ -45,7 +45,7 @@
       font-weight: 600;
   }
   
-  .contents-page .hero {
+  .contents-page .hero{
       height: 250px;
       background-image: url("../images/pexels-veeterzy-303383.jpg");/*url("/images/headers/header-background.jpg");*/
       background-repeat: no-repeat;
@@ -55,14 +55,21 @@
       justify-content: center;
       flex-direction: column;
   }
-  
+  .mission p{
+    font-size: 16px;
+
+  }
+  .mission ul{
+    text-decoration: none;
+
+  }
   .contents-page .hero h1 {
       color: #fff;
       font-size: 48px;
   }
   .contents-page .hero p {
       color: #ebf0f5;
-      font-size: 14px;
+      font-size: 16px;
   }
   
   .stats {
@@ -79,3 +86,4 @@
     display: block;
     text-align: center;
   }
+  

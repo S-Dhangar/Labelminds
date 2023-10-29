@@ -70,7 +70,8 @@ const Services = () => {
               <div className='service-box-two'>
 
                 Data Annotation
-                <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $0.005 Per Image</p>
+                <br />
+                {/* <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $0.005 Per Image</p> */}
                 <button onClick={navigator} name='dataannotation' className="btn btn-primary bouncy" style={{ animationDelay: "0.07s" }}>Read me</button>
 
               </div>
@@ -81,8 +82,8 @@ const Services = () => {
               </div>
               <div className='service-box-two'>
                 Web Scrapping
-
-                <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $5 </p>
+<br />
+                {/* <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $5 </p> */}
                 <button onClick={navigator} name='webscrapping' className="btn btn-primary bouncy" style={{ animationDelay: "0.34s" }}>Read me</button>
 
               </div>
@@ -92,7 +93,8 @@ const Services = () => {
               </div>
               <div className='service-box-two'>
                 Data Entry
-                <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $2 Per Document</p>
+                {/* <p style={{ fontSize: "15px", marginTop: "5px" }}>Min Price: $2 Per Document</p> */}
+                <br />
                 <button onClick={navigator} name='dataentry' className="btn btn-primary bouncy" style={{ animationDelay: "0.60s" }}>Read me</button>
 
               </div>
