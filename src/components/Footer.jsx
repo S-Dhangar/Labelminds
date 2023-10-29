@@ -21,7 +21,7 @@ const Footer = () => {
             <p className='logo-p'>Partner with LabelMinds for unparalleled data annotation services that drive AI innovation. Let us be your trusted ally in the journey towards groundbreaking artificial intelligence solutions.</p>
             <div className="row container-fluid" style={{justifyContent:'space-between'}}>
             <a className='social-media-logo' href="http://linkedin.com/company/labelminds/"><span><img height="20px" width="20px" src={linkedin} alt="" /> </span></a>
-            <a className='social-media-logo' href="https://instagram.com/labelminds"><span><img height="20px" width="20px" src={facebook} alt="" /> </span></a>
+            <a className='social-media-logo' href="https://www.facebook.com/profile.php?id=61552597335610"><span><img height="20px" width="20px" src={facebook} alt="" /> </span></a>
             <a className='social-media-logo' href="https://instagram.com/labelminds"><span><img height="20px" width="20px" src={instagram} alt="" /> </span></a>
             </div>
             </div>
